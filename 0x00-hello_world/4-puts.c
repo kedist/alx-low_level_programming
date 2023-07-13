@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
 * main  - does my stuff
-* Description: does my stuff explained 
-* Return: Always(Success); 
+* Description:does my stuff explained
+* Return:Always(Success);
 */
 
 int main(void)
