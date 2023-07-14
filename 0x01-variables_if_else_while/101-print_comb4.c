@@ -21,14 +21,19 @@ int main(void)
 				putchar(c);
 				putchar(i);
 				putchar(j);
-                               
-                                putchar(',');
-                                putchar(' ');
-                              
+					if (c == '7' && i == '8' && j == '9')
+					{
+						putchar('\n');
+					}
+					else {
+					putchar(',');
+				
+					putchar(' ');
+					}	
 			}
-		}
+			}
+			}
 		}	
-	}
-	putchar('\n');
+	
 	return (0);
 }	
