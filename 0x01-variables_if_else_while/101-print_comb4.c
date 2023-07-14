@@ -25,15 +25,15 @@ int main(void)
 					{
 						putchar('\n');
 					}
-					else {
-					putchar(',');
-				
-					putchar(' ');
+
+					else 
+					{
+						putchar(',');
+						putchar(' ');
 					}	
 			}
 			}
 			}
-		}	
-	
+	}
 	return (0);
-}	
+}
