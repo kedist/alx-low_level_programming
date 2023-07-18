@@ -1,19 +1,13 @@
-#include <stdio.h>
+#include "main.h"
 /**
 * main  - does my stuff
 * Description:does my stuff explained
 * Return:Always(Success);
 */
-int main(void)
+int _putchar(char l);
 {
 
-	char *p = "_putchar\n";
-
-	while (*p)
-	{
-		_putchar(*p);
-		p++;
-	}
+	_putchar('\n');
 
 	return (0);
 }

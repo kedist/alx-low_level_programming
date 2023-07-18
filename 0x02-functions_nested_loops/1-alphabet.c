@@ -1,19 +1,18 @@
 #include <stdio.h>
+#include "main.h"
 /**
 * main  - does my stuff
 * Description:does my stuff explained
 * Return:Always(Success);
 */
-int main(void)
+void print_alphabet(void)
 {
+	char l;
 
-	char *p = "_putchar\n";
-
-	while (*p)
+	for (l = 'a'; l <= 'z'; l++)
 	{
-		_putchar(*p);
-		p++;
+		putchar(l);
 	}
 
-	return (0);
+	putchar('\n');
 }
