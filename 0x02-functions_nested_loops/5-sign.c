@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* _isalpha  - does my stuff
+* print_sign  - does my stuff
 * @c: The
 * Description:does my stuff explained
 * Return:Always(Success);
