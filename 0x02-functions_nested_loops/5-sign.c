@@ -1,7 +1,7 @@
 #include "main.h"
 /**
 * print_sign  - does my stuff
-* @c: The
+* @n: The
 * Description:does my stuff explained
 * Return:Always(Success);
 */
