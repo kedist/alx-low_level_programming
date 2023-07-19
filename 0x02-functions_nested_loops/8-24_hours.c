@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* jack_bauern  - does my stuff
+* jack_bauer  - does my stuff
 * Description:does my stuff explained
 * Return:Always(Success);
 */
@@ -20,7 +20,7 @@ void jack_bauer(void)
 					{
 						_putchar(a + '0');
 						_putchar(b + '0');
-						_putchar(';');
+						_putchar(':');
 						_putchar(c + '0');
 						_putchar(d + '0');
 						_putchar('\n');
