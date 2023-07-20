@@ -7,13 +7,14 @@
 */
 void print_most_numbers(void)
 {
-int number;
+
+int number = 0;
+
 for (number = 0; number < 10; number++)
 {
-if ((number == 2) || (number == 4))
+if ((number != 2) || (number != 4))
 {
-number++;
-}
 putchar(number);
+}
 }
 }
