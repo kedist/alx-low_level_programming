@@ -12,7 +12,7 @@ for (number = 0; number < 10; number++)
 {
 if ((number == 2) || (number == 4))
 {
-break;
+number++;
 }
 putchar(number);
 }
