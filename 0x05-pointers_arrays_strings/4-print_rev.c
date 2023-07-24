@@ -3,6 +3,7 @@
 /**
 * print_rev - prints a string in reverse
 * @s: string to print
+* Return - nothing
 */
 
 void print_rev(char *s)
@@ -15,6 +16,12 @@ putchar(s[index]);
 
 putchar('\n');
 }
+
+/**
+* _strlen - prints a string in reverse
+* @s: string to print
+* Return:Always(Success);
+*/
 
 int _strlen(char *s)
 {
