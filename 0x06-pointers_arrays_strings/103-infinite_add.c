@@ -1,11 +1,11 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * infinite_add - adds 2  ints saves them as a string 
+ * infinite_add - adds 2  ints saves them as a string
  * @n1: 1 int
  * @n2: 2 int
- * @r: string 
- * @size_r: size of string 
+ * @r: string
+ * @size_r: size of string
  * Return: 0;
  */
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
@@ -31,8 +31,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 			r[index] -= 10;
 		}
 		index++;
-		s2--;
-		s1--;
+		s2--; s1--;
 		if (size_r == index && (s1 != n1 - 1 || s2 != n2 - 1 || carry == 1))
 			return (0);
 	}
@@ -45,7 +44,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 			carry = 1;
 			r[index] -= 10;
 		}
-		s1--;
+		s1--; 
 		index++;
 		if (size_r == index && (s1 != n1 - 1 ||  carry == 1))
 			return (0);
@@ -59,7 +58,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 			carry = 1;
 			r[index] -= 10;
 		}
-		s2--;
+		s2--; 
 		index++;
 		if (size_r == index && (s2 != n2 - 1 || carry == 1))
 			return (0);
@@ -82,6 +81,5 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		index--;
 		index2++;
 	}
-
 	return (r);
 }
