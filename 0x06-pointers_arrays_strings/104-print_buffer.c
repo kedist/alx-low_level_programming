@@ -1,11 +1,12 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * print_buffer - print a buffer
- * @b: string 
- * @size: buffer size
- * Return: noting!
- */
+* print_buffer - print a buffer
+* Description: print
+* @b: string
+* @size: buffer size
+* Return: noting!
+*/
 void print_buffer(char *b, int size)
 {
 	int i, counter = 0, size2 = size;
