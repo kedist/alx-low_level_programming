@@ -1,9 +1,9 @@
 #include "main.h"
 #include <stdlib.h>
 /**
-* main  - does my stuff
-* @size - takea chaars
-* @c - int takes
+* *create_array - does my stuff
+* @size: - takea chaars
+* @c: - int takes
 * Description:does my stuff explained
 * Return:Always(Success);
 */
@@ -21,7 +21,7 @@ ac =  malloc(sizeof(char) * size);
 if (ac == NULL)
 return (NULL);
 
-for(i = 0; i < size; i++)
+for (i = 0; i < size; i++)
 ac[i] = c;
 
 return (ac);
