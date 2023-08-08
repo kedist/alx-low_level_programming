@@ -16,7 +16,7 @@ int i, j, r;
 if (width <= 0 || height <= 0)
 return (NULL);
 
-p = malloc(sizeof(int) * height);
+p = malloc(sizeof(int *) * height);
 if (p == NULL)
 return (NULL);
 
