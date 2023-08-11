@@ -1,19 +1,19 @@
 #include "main.h"
 #include <stdlib.h>
 /**
-* main  - does my stuff
-* @b -int passed allocated
+* malloc_checked  - does my stuff
+* @b: -int passed allocated
 * Description:does my stuff explained
 * Return:Always(Success);
 */
 
 void *malloc_checked(unsigned int b)
 {
-char *r;
+unsigned int *r;
 
 r = malloc(b);
 if (r == NULL)
-exit(0);
+	exit(98);
 
 return (r);
 }
