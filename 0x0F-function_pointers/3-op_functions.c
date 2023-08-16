@@ -21,7 +21,8 @@ return (a + b);
 int op_sub(int a, int b)
 {
 return (a - b);
-}/**
+}
+/**
 * op_mul - does my stuff
 * @a: num1
 * @b: num2
@@ -60,7 +61,8 @@ int op_mod(int a, int b)
 	if (b == 0)
 	{
 		printf("err\n");
-		exit (15);
+		exit(15);
 	}
+}
 return (a % b);
 }
