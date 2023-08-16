@@ -16,13 +16,13 @@ int (*oper)(int, int);
 
 if (argc != 4)
 {
-printf("err\n");
+printf("Error\n");
 exit(98);
 }
 oper = get_op_func(argv[2]);
 if (oper == NULL)
 {
-printf("err\n");
+printf("Error\n");
 exit(99);
 }
 a = atoi(argv[1]);
