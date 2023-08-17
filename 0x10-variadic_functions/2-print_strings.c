@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <stdarg.h>
 /**
-* print_numbers  - does my stuff
+* print_strings  - does my stuff
 * @separator: separatort
 * @n: inta
 * Description:does my stuff explained
@@ -28,7 +28,7 @@ else
 	printf("%s", str);
 
 if (i != n - 1 && separator != NULL)
-        printf("%s", separator);
+printf("%s", separator);
 i++;
 }
 va_end(args);
