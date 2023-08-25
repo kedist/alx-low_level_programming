@@ -12,18 +12,19 @@ char *duplicat;
 int len;
 list_t *newnode;
 newnode = malloc(sizeof(list_t));
-if (new == NULL)
+if (newnode == NULL)
 	return (NULL);
 duplicat = strdup(str);
 if (duplicat == NULL)
 {
 	free(newnode);
-	rreturn (NULL);
+	return (NULL);
 }
-for (len = 0; str[len]; len++)
-newnode->str;
+for (len = 0; str[len];)
+len++;
 newnode->len = len;
 newnode->next = *head;
 *head = newnode;
+
 return (newnode);
 }
