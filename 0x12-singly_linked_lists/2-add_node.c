@@ -1,4 +1,6 @@
 #include "lists.h"
+#include <stdio.h>
+#include <string.h>
 /**
 * add_node - does my stuff
 * @head: list head
@@ -8,23 +10,20 @@
 */
 list_t *add_node(list_t **head, const char *str)
 {
-char *duplicat;
-size_t length;
 list_t *newnode;
+
 newnode = malloc(sizeof(list_t));
 if (newnode == NULL)
 	return (NULL);
-duplicat = strdup(str);
-if (duplicat == NULL)
+newnode->str = strdup(str);
+if (newnode->str == NULL)
 {
 	free(newnode);
 	return (NULL);
 }
-for (length = 0; str[length];)
-length++;
-newnode->len = length;
+newnode->len = strlen(str);
 newnode->next = *head;
 *head = newnode;
 
-return (newnode);
+return (*head);
 }
