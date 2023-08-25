@@ -1,5 +1,7 @@
 #include <unistd.h>
 #include "lists.h"
+#include <string.h>
+#include <stdio.h>
 /**
 * add_node_end - does my stuff
 * @head: gkgl
@@ -9,39 +11,31 @@
 */
 list_t *add_node_end(list_t **head, const char *str)
 {
-list_t *newlist, *tmp;
+
+	list_t *newlist;
+	list_t *culist;
+
 if (str != NULL)
-{
 newlist = malloc(sizeof(list_t));
+
 if (newlist == NULL)
-        return (NULL);
+	return (NULL);
+
 newlist->str = strdup(str);
-newlist->len = _strlen(str);
+newlist->len = strlen(str);
 newlist->next = NULL;
-if (head == NULL);
+if (*head == NULL)
 {
 *head = newlist;
-return (head);
+return (newlist);
 }
 else
 {
-tmp = *head;
-while (tmp->next)
-	tmp = tmp->next;
-tmp->next = newlist;
-return (tmp);
-}
-}
-return (NULL);
-}
+culist = *head;
+while (culist->next)
+	culist = culist->next;
 
-int _strlen(const char *st)
-{
-int i = 0;
-while (*st)
-{
-st++;
-i++;
+culist->next = newlist;
+return (newlist);
 }
-return (i);
 }
