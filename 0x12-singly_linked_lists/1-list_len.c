@@ -1,16 +1,18 @@
 #include "lists.h"
 /**
 * list_len - does my stuff
-* @h: pointer to list 
+* @h: pointer to list
 * Description:does my stuff explained
 * Return:Always(Success);
 */
 size_t list_len(const list_t *h)
 {
+const list_t *curr;
 size_t size = 0;
-while (h != NULL)
+curr = h;
+while (curr != NULL)
 {
-	h = h->next;
+	curr = curr->next;
 	size++;
 }
 return (size);
